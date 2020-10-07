@@ -1,0 +1,132 @@
+.border{
+border-style: solid;
+}
+
+#h1{
+  text-align: center;
+  background: #fff4a3;
+  color: white;
+  font-family: Arial;
+  position: fixed;
+  font-size: 30px;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 99;
+}
+
+#h1 a:link{
+text-decoration: none;
+}
+
+.titleImg { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 225px;
+}
+
+.titlePara {
+  padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.imgDiv{
+  
+  margin-top: 30px;
+  padding: 20px;
+
+}
+
+.innerImg {
+  position: relative;
+  height: 250px;
+  width: 349px;
+  margin-left: 40px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+/* Child Text Container */
+.innerImg div{
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+
+  background: black;
+  color: white;
+
+  margin-bottom: 5px;
+
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.innerImg:hover{
+  cursor: pointer;
+}
+
+.innerImg:hover div{
+  width: 250px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.8; 
+}
+
+.zoom{
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.topNav{
+  padding-bottom: 20px;
+}
+.topNav a {
+  color: #ff3300;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+.topNav a.active {
+  background-color: #ff9900;
+  color: white;
+}
+
+.label{
+  color: #ff3300;
+font-size: 19px;
+}
+.dropdown{
+  background-color: #fff4a3;
+
+}
+
+
+.error{
+  margin-top: 250px;
+  margin-left: 10px;	
+}
+.img1ErrorSubmit{
+ left: 50%;
+  position: absolute; 
+ transform: translate(-50%, -50%);
+margin-bottom: 20px;
+
+  text-decoration: none;
+}
