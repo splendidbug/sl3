@@ -3,18 +3,18 @@
 <body style="background-color:#F5F5F5;">
 <title>Armed Forces</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="C:\Users\Lenovo\Desktop\assignments\sl3\ass1\militaryStyle.css">
+<link rel="stylesheet" href="militaryStyle.css">
 <body>
 
 
 <div id = "h1">
-	<h1><a href="C:\Users\Lenovo\Desktop\assignments\sl3\ass1\home.html" >Suggest a Change</a></h1>
+	<h1><a href="home.html" >Suggest a Change</a></h1>
 
 <div class = "topNav">
-<a href="C:\Users\Lenovo\Desktop\assignments\sl3\ass1\home.html">Home</a>
-  <a class="active" href="C:\Users\Lenovo\Desktop\assignments\sl3\ass1\military.html">Military</a>
-  <a href="C:\Users\Lenovo\Desktop\assignments\sl3\ass1\scienceAndTechnology.html">Science and Technology</a>
-  <a href="C:\Users\Lenovo\Desktop\assignments\sl3\ass1\heathcare.html">Healthcare</a>
+<a href="home.html">Home</a>
+  <a class="active" href="military.html">Military</a>
+  <a href="scienceAndTechnology.html">Science and Technology</a>
+  <a href="heathcare.html">Healthcare</a>
 
 </div>
 
@@ -35,7 +35,7 @@ function scrollFunction() {
 }
 </script>
 
-<form action="C:\Users\Lenovo\Desktop\assignments\sl3\ass1\military.html" class = "error" onsubmit="return validateForm()">
+<form action="military.html" class = "error" onsubmit="return validateForm()">
   <label for="fname">name:</label>
   <input type="text" id="name" name="name"  minlength="1" pattern="[A-Za-z\s]+"><br><br>
 
@@ -84,8 +84,8 @@ function scrollFunction() {
           alert("Please enter your phone number");
 	   return false;
       }
-      var mailformat = /[0-9]{10}/;
-      if(x.match(mailformat)){}
+      var phoneformat = /[0-9]{10}/;
+      if(x.match(phoneformat)){}
       else{
             alert("Please enter a valid phone number of 10 digits");
 		return false;
